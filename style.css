@@ -25,7 +25,7 @@ nav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.haeder {
+.header {
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -37,8 +37,6 @@ nav {
 }
 
 .avatar {
-  /* height: 120px; */
-  /* width: 120px; */
   display: flex;
   color: whitesmoke;
   font-weight: bold;
@@ -47,7 +45,6 @@ nav {
 }
 
 .avatar-logo {
-  /* position: relative; */
   height: 120px;
 }
 
@@ -75,16 +72,13 @@ nav {
 .border-icon {
   position: absolute;
   top: 0px;
-  /* height: 120px; */
   width: 120px;
-  /* top: 34px; */
 }
 
 .main-icon {
   position: absolute;
   top: 20px;
   left: 45px;
-  /* height: 80px; */
   width: 70px;
 }
 
@@ -92,7 +86,6 @@ nav {
   display: flex;
   gap: 34px;
   color: rgba(234, 211, 161);
-  /* font-size: 20px; */
 }
 
 .money-item {
@@ -143,23 +136,88 @@ i {
   width: 100%;
   border-top: 3px solid rgba(234, 211, 161, 0.411);
   padding-top: 5px;
+  height: 80px;
 }
 
 .footer-container {
   display: flex;
-  height: 100px;
+  height: 80px;
   background-color: rgba(0, 0, 0, 0.411);
-  align-items: center;
+  align-items: stretch;
   border-top: 1px solid rgba(234, 211, 161, 0.411);
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
-  display: flex;
   justify-content: space-evenly;
-  /* gap: 20px; */
+  padding-top: 16px;
 }
 
 .footer-item {
   color: rgba(234, 211, 161);
-  /* padding-left: 40px; */
-  /* padding-right: 40px; */
+  position: relative;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 160px);
+}
+
+.aside {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-right {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.233);
+  border-right: 0px;
+  background-color: rgba(0, 0, 0, 0.411);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* height: 320px; */
+}
+
+.aside-right-item,
+.aside-left-item {
+  height: 60px;
+  width: 60px;
+}
+
+.aside-right-item img,
+.aside-left-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid orange;
+}
+
+.game-button {
+  position: absolute;
+  top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(53, 94, 148);
+  padding: 40px;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+.game-button:before {
+  position: absolute;
+  content: " ";
+  /* padding: 40px; */
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  border: 4px solid rgba(255, 255, 255, 0.233);
 }
