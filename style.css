@@ -60,13 +60,21 @@ nav {
   width: 160px;
   background-color: rgba(234, 211, 161, 0.411);
   border: 2px solid rgba(234, 211, 161, 0.411);
+  border-radius: 5px;
   padding: 1px;
 }
 
 .avatar-experience p {
   height: 100%;
   width: 100%;
-  background-color: #0b6ca6;
+  background: rgb(44, 210, 213);
+  background: linear-gradient(
+    90deg,
+    rgba(44, 210, 213, 1) 0%,
+    rgba(19, 105, 140, 1) 0%,
+    rgba(19, 105, 140, 1) 60%,
+    rgba(44, 212, 216, 1) 100%
+  );
 }
 
 .border-icon {
@@ -123,6 +131,25 @@ nav {
 
 i {
   font-size: 28px;
+  background: linear-gradient(
+    0deg,
+    rgba(170, 151, 111, 1) 0%,
+    rgba(207, 186, 141, 1) 55%,
+    rgba(234, 211, 161, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-blue {
+  background: linear-gradient(
+    0deg,
+    rgba(93, 131, 131, 1) 0%,
+    rgba(49, 186, 184, 1) 55%,
+    rgba(44, 212, 216, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .color {
@@ -205,7 +232,13 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(53, 94, 148);
+  background: linear-gradient(
+    0deg,
+    rgba(44, 210, 213, 1) 0%,
+    rgba(19, 105, 140, 1) 40%,
+    rgba(19, 105, 140, 1) 60%,
+    rgba(44, 212, 216, 1) 100%
+  );
   padding: 40px;
   border-radius: 50%;
   height: 120px;
@@ -215,9 +248,29 @@ i {
 .game-button:before {
   position: absolute;
   content: " ";
-  /* padding: 40px; */
   border-radius: 50%;
-  height: 120px;
-  width: 120px;
-  border: 4px solid rgba(255, 255, 255, 0.233);
+  height: 126px;
+  width: 126px;
+  border: 4px solid rgba(255, 255, 255, 0.633);
+}
+
+.game-button:after {
+  position: absolute;
+  content: " ";
+  border-radius: 50%;
+  height: 146px;
+  width: 146px;
+  border: 2px solid rgba(255, 255, 255, 0.633);
+}
+
+.game-button p {
+  font-size: 30px;
+  color: #ecfbff;
+  text-shadow: 0 0 5px rgb(192, 241, 250), 0 0 10px rgb(192, 241, 250),
+    0 0 15px rgb(192, 241, 250), 0 0 20px #b8e9ff, 0 0 30px #b8e9ff,
+    0 0 40px #b8e9ff, 0 0 55px #b8e9ff, 0 0 75px #b8e9ff;
+}
+
+.content {
+  width: 100%;
 }
